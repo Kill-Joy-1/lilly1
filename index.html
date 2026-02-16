@@ -67,6 +67,35 @@
     50% { transform: translateY(-12px); }
     100% { transform: translateY(0px); }
   }
+   .romantic-footer {
+  margin-top: 80px;
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Brush Script MT", cursive;
+  color: #ff4d6d;
+  background: linear-gradient(to right, #1a1a1a, #2b2b2b);
+  letter-spacing: 3px;
+  animation: glowText 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px rgba(255,77,109,0.4),
+                 0 0 20px rgba(255,77,109,0.3);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255,77,109,0.9),
+                 0 0 40px rgba(255,77,109,0.7);
+  }
+}
+
+/* slight float movement */
+.romantic-footer:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease;
+}
+
 </style>
 
 </head>
@@ -83,9 +112,10 @@
   <!-- Add images here later -->
 </section>
 
-<footer>
- I LOVE YOU 
+<footer class="romantic-footer">
+  I Love You ❤️
 </footer>
+
 
 <script>
   // Add image URLs here later
